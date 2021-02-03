@@ -1,0 +1,777 @@
+@charset "UTF-8";
+
+/*
+	Filename:		template.css
+	Author:			Mats Richard Hellstrand (Sweden)
+	Website:		www.SITE.com
+	Date:			February 3rd, 2021
+	Language:		English
+	Description:	This stylesheet is used for all selectors.
+*/
+
+@font-face {
+font-family				:	fontawesome-webfont;
+src						:	url(../multimedia/font/fontawesome-webfont.ttf);
+}
+
+@font-face {
+font-family				:	NothingYouCouldDo;
+src						:	url(../multimedia/font/NothingYouCouldDo.ttf);
+}
+
+* {
+
+font-family:NothingYouCouldDo, Arial;}
+
+html, body, header, section, div, span, img, h1, h2, h3, p, a, q, strong, ol, ul, li, article, aside, footer {
+margin					:	0;
+padding					:	0;
+border					:	0;
+vertical-align			:	baseline;
+}
+
+html {
+width					:	100%;
+height					:	100%;
+position				:	relative;
+font-family				:	"Bookman Old Style", "Verdana", "Geneva", "sans-serif";
+font-size				:	16px;
+overflow				:   hidden;
+}
+
+body {
+width					:	100%;
+height					:	100%;
+background-color		:	beige;
+background-image		:	url(../multimedia/image/background_PixabayDotCom_darkmoon1968_flower.png);
+background-repeat		:	no-repeat;
+background-size			:	cover;
+line-height				:	1;
+overflow				:	hidden scroll;
+}
+
+h1, h2, h3, p {
+clear					:	both;
+margin-bottom			:	20px;
+text-justify			:	inter-word;
+overflow				:	hidden;
+}
+
+h1 {
+font-size				:	3rem;
+}
+
+h2 {
+font-size				:	2rem;
+}
+
+p {
+text-align				:	justify;
+}
+
+a {
+text-decoration			:	none;
+color					:	inherit;
+}
+
+a:hover {
+cursor					:	pointer;
+}
+
+q::before,
+q::after {
+font-family				:	fontawesome-webfont;
+}
+
+q::before {
+content					:	"\f10d";
+}
+
+q::after {
+content					:	"\f10e";
+}
+
+.hidden {
+display					:	none !important;
+}
+
+.text-left {
+text-align				:	left;
+}
+
+.text-right {
+text-align				:	right;
+}
+
+.text-center {
+text-align				:	center;
+}
+
+.text-justify {
+text-align				:	justify;
+}
+
+header {
+width					:	100%;
+height					:	auto;
+position				:	absolute;
+top						:	0;
+display					:	block;
+background-color		:	#fff;
+background-image		:   url(../multimedia/image/background_PixabayDotCom_ChrisFiedler_paper.png);
+background-repeat		:   no-repeat;
+background-size			:   cover;
+overflow				:	hidden;
+z-index					:	1;
+}
+
+nav {
+}
+
+.handler {
+width					:	100%;
+color					:	#000;
+display					:	inline-block;
+cursor					:	pointer;
+}
+
+#handler__toggle {
+}
+
+.handler__toggle {
+float					:	right;
+margin					:	15px 15px 10px 0;
+display					:	inline-block;
+background-color		:	transparent;
+color					:	#000;
+font-size				:	2.25rem;
+cursor					:	pointer;
+}
+
+.handler__toggle::after,
+.handler__toggle.showing::after {
+font-family				:	fontawesome-webfont;
+}
+
+.handler__toggle::after {
+content					:	"\f0c9";
+}
+
+.handler__toggle.showing::after {
+content					:	"\f00d";
+}
+
+.banner-logotype {
+width					:	auto;
+height					:	4em;
+position				:	absolute;
+left					:	0em;
+top						:	2.2em;
+}
+
+#handler__navigation {
+width					:	100%;
+right					:	13em;
+margin					:	0px auto 0px auto;
+display					:	inline-block;
+list-style				:	none;
+}
+
+#handler__navigation.showing {
+max-height				:	450px;
+}
+
+nav ul {
+float					:	right;
+list-style				:	none;
+}
+
+nav ul li {
+width					:	100%;
+display					:	inline-block;
+color					:	#000;
+}
+
+nav ul li a {
+display					:	block;
+padding					:	0 12px 0 12px;
+line-height				:	65px;
+font-size				:	1.25rem;
+}
+
+.section__panel {
+height					:	100%;
+}
+
+section {
+width					:	100%;
+height					:	75%;
+position				:	absolute;
+top						:	6em;
+margin-left				:	-250%;
+display					:	block;
+padding					:	2.5em;
+background-color		:	#fff;
+background-image		:   url(../multimedia/image/background_PixabayDotCom_ChrisFiedler_paper.png);
+background-repeat		:   no-repeat;
+background-size			:   cover;
+overflow				:	hidden;
+}
+
+.paper__background__first {
+width					:	100%;
+height					:	75%;
+position				:	absolute;
+top						:	6em;
+margin-left				:	0;
+display					:	block;
+padding					:	2.5em;
+background-color		:	#fff;
+background-image		:   url(../multimedia/image/background_PixabayDotCom_ChrisFiedler_paper.png);
+background-repeat		:   no-repeat;
+background-size			:   cover;
+transform				:	rotate(-178deg);
+}
+
+.paper__background__second {
+width					:	100%;
+height					:	75%;
+position				:	absolute;
+top						:	6em;
+margin-left				:	0;
+display					:	block;
+padding					:	2.5em;
+background-color		:	#fff;
+background-image		:   url(../multimedia/image/background_PixabayDotCom_ChrisFiedler_paper.png);
+background-repeat		:   no-repeat;
+background-size			:   cover;
+transform				:	rotate(178deg);
+}
+
+section:target {
+margin-left				:	0%;
+}
+
+.section__container {
+width:100%;
+height:100%;
+}
+
+.section__container__row {
+clear:both;
+width:100%;
+height					:	50%;
+display					:	inline-block;
+}
+
+.section__container__notepad {
+margin-bottom:1.5em;
+display					:	inline-block;
+}
+
+.notepad {
+padding: 0 23px 14px 35px;
+line-height: 23px;
+font-family:NothingYouCouldDo, Arial;
+font-size: 1em;
+color: #666;
+}
+
+.notepad p, .notepad blockquote {
+width:55%;
+margin-bottom: 23px;
+}
+.notepad :last-child {
+margin-bottom: 0;
+}
+
+.notepad-heading {
+position: relative;
+margin: 0 -23px 14px -35px;
+height: 38px;
+background: #14466a;
+border-radius: 2px 2px 0 0;
+background-image: -webkit-linear-gradient(top, #226797, #0c3452);
+background-image: -moz-linear-gradient(top, #226797, #0c3452);
+background-image: -o-linear-gradient(top, #226797, #0c3452);
+background-image: linear-gradient(to bottom, #226797, #0c3452);
+-webkit-box-shadow: inset 0 1px #2f81ad, 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px black;
+box-shadow: inset 0 1px #2f81ad, 0 2px 1px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px black;
+}
+.notepad-heading > h1 {
+line-height: 36px;
+font-size: 14px;
+color: white;
+text-align: center;
+text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+}
+.notepad-heading:before, .notepad-heading:after {
+content: '';
+position: absolute;
+bottom: 2px;
+left: 1px;
+right: 1px;
+height: 0;
+border-top: 1px dashed #617c90;
+border-color: rgba(255, 255, 255, 0.35);
+}
+.notepad-heading:after {
+bottom: 3px;
+border-color: #071c2c;
+border-color: rgba(0, 0, 0, 0.5);
+}
+
+.notepad__avatar__placement {
+width:13em;
+height:13em;
+position:absolute;
+top:4em;
+right:0em;
+}
+
+.page__switch {
+width:10em;
+height:10em;
+position:absolute;
+top:2em;
+left:50%;
+background-color:#FDE95A;
+}
+
+.switch__note__text {
+position: absolute;
+top: 2.25em;
+left: 1em;
+display: block;
+font-family:NothingYouCouldDo, Arial;
+transform: rotate(-20deg);
+}
+
+#switch__note__text {
+position: absolute;
+left:50%;
+bottom: 1em;
+display: block;
+font-family:NothingYouCouldDo, Arial;
+}
+
+.switch {
+position: relative;
+top:4em;
+left:50%;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #57f321;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.section__container__image {
+margin-bottom:1.5em;
+display					:	inline-block;
+}
+
+.container__left {
+}
+
+.container__image__header {
+width:25%;
+margin:0 auto;
+}
+
+.image__header {
+width:auto;
+height:auto;
+padding:15px 15px 25px 15px;
+background-color		:	#fff;
+z-index:2;
+}
+
+.rotate__left {
+transform: rotate(-20deg);
+}
+
+.rotate__right {
+transform: rotate(20deg);
+}
+
+.polaroids a:after {
+content: attr(title);
+font-size:0.75em;
+}
+
+.image__tape__topleft {
+width:4em;
+height:1em;
+position:absolute;
+top:0.15em;
+left:-1.25em;
+border:1px solid #ccc;
+background-color: rgba(123, 123, 123, 0.35);
+transform: rotate(-40deg);
+z-index:2;
+}
+
+.tape__topleft__large {
+width:7em;
+height:2em;
+left:-2.5em;
+}
+
+.image__tape__topcenter {
+width:8em;
+height:1em;
+position:absolute;
+left:50%;
+top:-0.5em;
+border:1px solid #ccc;
+background-color: rgba(123, 123, 123, 0.35);
+transform: rotate(0deg);
+z-index:2;
+}
+
+.image__tape__topright {
+width:4em;
+height:1em;
+position:absolute;
+top:0.15em;
+right:-1.25em;
+border:1px solid #ccc;
+background-color: rgba(123, 123, 123, 0.35);
+transform: rotate(40deg);
+z-index:2;
+}
+
+.tape__topright__large {
+width:7em;
+height:2em;
+right:-2.5em;
+}
+
+.image__tape__bottomleft {
+width:4em;
+height:1em;
+position:absolute;
+left:-1.25em;
+bottom:0.15em;
+border:1px solid #ccc;
+background-color: rgba(123, 123, 123, 0.35);
+transform: rotate(40deg);
+z-index:2;
+}
+
+.image__tape__bottomcenter {
+width:8em;
+height:1em;
+position:absolute;
+left:50%;
+bottom:-0.5em;
+border:1px solid #ccc;
+background-color: rgba(123, 123, 123, 0.35);
+z-index:2;
+}
+
+.image__tape__bottomright {
+width:4em;
+height:1em;
+position:absolute;
+right:-1.25em;
+bottom:0.15em;
+border:1px solid #ccc;
+background-color: rgba(123, 123, 123, 0.35);
+transform: rotate(-40deg);
+z-index:2;
+}
+
+.page__image {
+width:90%;
+height:auto;
+max-height:75%;
+position:relative;
+z-index:1;
+}
+
+.section__container__text {
+}
+
+.container__left {
+}
+
+.container__right {
+}
+
+.container__left > .container__text__body {
+}
+
+.container__right {
+float:right !important;
+}
+
+.container__right > .container__text__body {
+}
+
+.container__camera__film  {
+padding:1.25em 0.25em 1.25em 0.25em;
+background-color:#000;
+}
+
+.section__container__text {
+padding:1.25em 0.25em 1.25em 0.25em;
+background-color:#000;
+}
+
+.text__body__top__bar {
+background-image: linear-gradient(to right, #000 0.5em, #fff 0.5em);
+background-size: 1.5em 2.5em;
+background-position: bottom;
+padding: 0.5em 0em 0.5em 0em;
+}
+
+.text__body__middle__body {
+margin:10px 0px 10px 0px;
+padding:0.5em 1em 1em 1em;
+border-left:0.5em solid #000;
+border-right:0.5em solid #000;
+background-color: #fff;
+color:#000;
+}
+
+.text__body__middle__body > strong, .text__body__middle__body > q {
+display:block;
+margin-bottom:0.75em;
+}
+
+.text__body__middle__body > a > .flip-card-logotype {
+width:25%;
+width:25%;
+}
+
+.text__body__bottom__bar {
+background-image: linear-gradient(to right, #000 0.5em, #fff 0.5em);
+background-size: 1.5em 2.5em;
+background-position: bottom;
+padding: 0.5em 0em 0.5em 0em;
+}
+
+.containerbox {
+margin-left				:	0em;
+}
+
+.pin {
+background-color: #aaa;
+height: 32px;
+width: 2px;
+position: absolute;
+left: 50%;
+top: -15px;
+}
+
+.pin:after {
+background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+border-radius: 50%;
+box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1), inset 3px 3px 3px hsla(0,0%,100%,.2), inset -3px -3px 3px hsla(0,0%,0%,.2), 23px 20px 3px hsla(0,0%,0%,.15);
+content: '';
+height: 12px;
+left: -5px;
+position: absolute;
+top: -10px;
+width: 12px;
+}
+
+.pin__red:after {
+background-color: #A31;
+}
+
+.pin:before {
+background-color: hsla(0,0%,0%,0.1);
+box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+content: '';
+
+height: 24px;
+width: 2px;
+left: 0;
+position: absolute;
+top: 8px;
+
+transform: rotate(57.5deg);
+-moz-transform: rotate(57.5deg);
+-webkit-transform: rotate(57.5deg);
+-o-transform: rotate(57.5deg);
+-ms-transform: rotate(57.5deg);
+
+transform-origin: 50% 100%;
+-moz-transform-origin: 50% 100%;
+-webkit-transform-origin: 50% 100%;
+-ms-transform-origin: 50% 100%;
+-o-transform-origin: 50% 100%;
+}
+
+
+aside {
+width					:	100%;
+background-color		:	#fff;
+background-image		:   url(../multimedia/image/background_PixabayDotCom_ChrisFiedler_paper.png);
+background-repeat		:   no-repeat;
+background-size			:   cover;
+margin-bottom			:	7em;
+}
+
+.contactbox {
+text-align				:	center;
+}
+.contactbox__header {
+margin-bottom			:	0px;
+padding					:	10px 12px;
+font-size				:	1.125rem;
+font-weight				:	700;
+line-height				:	1.35294;
+}
+
+.contactbox__list {
+list-style-type			:	none;
+}
+
+.contactbox span {
+padding-left			:	5px;
+padding-right			:	10px;
+}
+
+.contactbox span > strong {
+font-weight				:	700;
+}
+
+.list__item {
+}
+
+.list__item+.list__item {
+}
+
+.list__item:last-child {
+border-bottom				:	0;
+}
+
+.item__icon {
+width						:	2.25em;
+height						:	2.25em;
+display						:	table-cell;
+padding						:	9px;
+vertical-align				:	middle;
+line-height					:	1;
+font-size					:	1.125rem;
+text-align					:	center;
+text-decoration				:	inherit;
+text-transform				:	none;
+overflow					:	hidden;
+}
+
+.mail__icon:before,
+.linkedin__icon:before,
+.facebook__icon:before,
+.twitter__icon:before,
+.instagram__icon:before {
+font-family				:	fontawesome-webfont;
+}
+
+.mail__icon:before {
+content						:	"\f0e0"
+}
+
+.linkedin__icon:before {
+content						:	"\f08c"
+}
+
+.facebook__icon:before {
+content						:	"\f09a"
+}
+
+.twitter__icon:before {
+content						:	"\f099"
+}
+
+.instagram__icon:before {
+content						:	"\f16d"
+}
+
+.list__item:hover .mail__icon:before,
+.list__item:hover .linkedin__icon:before,
+.list__item:hover .facebook__icon:before,
+.list__item:hover .twitter__icon:before,
+.list__item:hover .instagram__icon:before {
+}
+
+.item__text {
+height						:	45px;
+display						:	table-cell;
+line-height					:	1.33333;
+vertical-align				:	middle;
+font-size					:	1rem;
+}
+
+footer {
+width					:	100%;
+position				:	fixed;
+left					:	0;
+bottom					:	0;
+padding					:	15px 0 15px 0;
+display					:	block;
+background-color		:	#fff;
+background-image		:   url(../multimedia/image/background_PixabayDotCom_ChrisFiedler_paper.png);
+background-repeat		:   no-repeat;
+background-size			:   cover;
+overflow				:	hidden;
+z-index					:	1;
+}
+
+.statement {
+font-size				:	0.75rem;
+}

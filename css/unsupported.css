@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*
+	Filename:		unsupported.css
+	Author:			Mats Richard Hellstrand (Sweden)
+	Website:		www.SITE.com
+	Date:			February 3rd, 2021
+	Language:		English
+	Description:	This stylesheet is used for all unsupported selectors.
+*/
+
+*, *::before, *::after {
+-webkit-box-sizing			:	border-box;
+-moz-box-sizing				:	border-box;
+-ms-box-sizing				:	border-box;
+-o-box-sizing				:	border-box;
+box-sizing					:	border-box;
+-webkit-font-smoothing		:	antialiased;
+-moz-osx-font-smoothing		:	grayscale;
+}
+
+html {
+-webkit-text-size-adjust	:	100%;
+-ms-text-size-adjust		:	100%;
+text-size-adjust			:	100%;
+}
+
+header {
+-webkit-box-shadow			:	0 2px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	0 2px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	0 2px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	0 2px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	0 2px 5px 0 rgba(0, 0, 0, .5);
+-webkit-transition			:	height 1s;
+-moz-transition				:	height 1s;
+-ms-transition				:	height 1s;
+-o-transition				:	height 1s;
+transition					:	height 1s;
+}
+
+.handler__toggle {
+-webkit-border-radius		:	3px;
+-moz-border-radius			:	3px;
+-ms-border-radius			:	3px;
+-o-border-radius			:	3px;
+border-radius				:	3px;
+}
+
+nav ul, .showing {
+-webkit-transition			:	max-height 2s;
+-moz-transition				:	max-height 2s;
+-ms-transition				:	max-height 2s;
+-o-transition				:	max-height 2s;
+transition					:	max-height 2s;
+}
+
+.banner-logotype {
+-webkit-transform			:	translateY(-50%);
+-moz-transform				:	translateY(-50%);
+-ms-transform				:	translateY(-50%);
+-o-transform				:	translateY(-50%);
+transform					:	translateY(-50%);
+}
+
+section, .paper__background__first, .paper__background__second {
+-webkit-box-shadow			:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.rotate__none {
+-webkit-box-shadow			:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.rotate__left, .image__tape__topleft, .image__tape__bottomright {
+-webkit-box-shadow			:	-1px 1px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	-1px 1px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	-1px 1px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	-1px 1px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	-1px 1px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.rotate__right, .image__tape__topright, .image__tape__bottomleft {
+-webkit-box-shadow			:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+}
+
+section {
+-webkit-transform			:	translateX(0%);
+-moz-transform				:	translateX(0%);
+-ms-transform				:	translateX(0%);
+-o-transform				:	translateX(0%);
+transform					:	translateX(0%);
+}
+
+.image__tape__topcenter, .image__tape__bottomcenter {
+-webkit-box-shadow			:	0px 1px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	0px 1px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	0px 1px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	0px 1px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	0px 1px 5px 0 rgba(0, 0, 0, .5);
+-webkit-transform			:	translateX(-50%);
+-moz-transform				:	translateX(-50%);
+-ms-transform				:	translateX(-50%);
+-o-transform				:	translateX(-50%);
+transform					:	translateX(-50%);
+}
+
+.text__body__middle__body {
+-webkit-box-shadow			:	-1px -1px 5px 0 rgba(0, 0, 0, .5) inset, 1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+-moz-box-shadow				:	-1px -1px 5px 0 rgba(0, 0, 0, .5) inset, 1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+-ms-box-shadow				:	-1px -1px 5px 0 rgba(0, 0, 0, .5) inset, 1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+-o-box-shadow				:	-1px -1px 5px 0 rgba(0, 0, 0, .5) inset, 1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+box-shadow					:	-1px -1px 5px 0 rgba(0, 0, 0, .5) inset, 1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+}
+
+.page__switch {
+-webkit-box-shadow			:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	-1px 2px 5px 0 rgba(0, 0, 0, .5), 1px 0px 5px 0 rgba(0, 0, 0, .5);
+-webkit-transform			:	translateX(-50%);
+-moz-transform				:	translateX(-50%);
+-ms-transform				:	translateX(-50%);
+-o-transform				:	translateX(-50%);
+transform					:	translateX(-50%);
+}
+
+.switch, #switch__note__text {
+-webkit-transform			:	translateX(-50%);
+-moz-transform				:	translateX(-50%);
+-ms-transform				:	translateX(-50%);
+-o-transform				:	translateX(-50%);
+transform					:	translateX(-50%);
+}
+
+.slider.round, input:checked + .slider, input:focus + .slider {
+-webkit-box-shadow			:	1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+-moz-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+-ms-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+-o-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+box-shadow					:	1px 1px 5px 0 rgba(0, 0, 0, .5) inset;
+}
+
+.slider.round:before {
+-webkit-box-shadow			:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	1px 1px 5px 0 rgba(0, 0, 0, .5);
+}
+
+section, .paper__background__first, .paper__background__second, aside {
+-webkit-transition			:	all 1.5s ease-in-out;
+-moz-transition				:	all 1.5s ease-in-out;
+-ms-transition				:	all 1.5s ease-in-out;
+-o-transition				:	all 1.5s ease-in-out;
+transition					:	all 1.5s ease-in-out;
+}
+
+aside {
+-webkit-box-shadow			:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	2px 2px 5px 0 rgba(0, 0, 0, .5), -2px -2px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.contactbox__header {
+-webkit-box-shadow			:	0 2px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	0 2px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	0 2px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	0 2px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	0 2px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.item__icon {
+-webkit-border-radius		:	20px;
+-moz-border-radius			:	20px;
+-ms-border-radius			:	20px;
+-o-border-radius			:	20px;
+border-radius				:	20px;
+}
+
+footer {
+-webkit-box-shadow			:	0 -3px 5px 0 rgba(0, 0, 0, .5);
+-moz-box-shadow				:	0 -3px 5px 0 rgba(0, 0, 0, .5);
+-ms-box-shadow				:	0 -3px 5px 0 rgba(0, 0, 0, .5);
+-o-box-shadow				:	0 -3px 5px 0 rgba(0, 0, 0, .5);
+box-shadow					:	0 -3px 5px 0 rgba(0, 0, 0, .5);
+}

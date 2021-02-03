@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+	Filename:		theme.css
+	Author:			Mats Richard Hellstrand (Sweden)
+	Website:		www.hellstrand.org
+	Date:			February 3rd, 2021
+	Language:		English
+	Description:	This stylesheet is used for all selectors regarding default theme.
+*/
+
+body {
+background-color			:	#ebebeb;
+}
+
+nav > ul {
+border-right				:	1px solid transparent;
+}
+
+nav > ul > li {
+border-left					:	1px solid transparent;
+}
+
+nav > ul > li:hover, handler:hover, .list__item:hover {
+background-color			:	#990000;
+color						:	#fff;
+}
+
+.item__icon {
+color						:	#000;
+}
+
+.list__item:hover .mail__icon:before,
+.list__item:hover .linkedin__icon:before,
+.list__item:hover .facebook__icon:before,
+.list__item:hover .twitter__icon:before,
+.list__item:hover .instagram__icon:before {
+color						:	#fff;
+}
+
+.statement {
+color						:	#000;
+}
